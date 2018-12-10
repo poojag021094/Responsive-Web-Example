@@ -4,6 +4,7 @@
 body{
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
 }
 .row{
     display: flex;
@@ -21,6 +22,11 @@ div img{
     text-align: center;
     border-radius: 5px;
     border: none;
+}
+[class*="col-"] a{
+    text-decoration: none;
+    color:blue;
+    font-weight: bold;
 }
 .col-1-2{
     background-color: antiquewhite;
