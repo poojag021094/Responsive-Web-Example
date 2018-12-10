@@ -16,48 +16,58 @@ div img{
 }
 [class*="col-"]{
     border: 1px solid black;
-    margin-bottom: 2%;
-
+    margin-bottom: 1.5%;
+    margin-top: 1.5%;  
+    text-align: center;
+    border-radius: 5px;
+    border: none;
 }
-
+.col-1-2{
+    background-color: antiquewhite;
+}
+.col-2{
+    background-color: aqua;
+}
+.col-3,.col-1-4{
+    background-color: cornsilk;
+}
+.col-4{
+    background-color: gainsboro;
+}
 /*Tablet*/
 @media only screen and (min-width: 480px)  {
 	[class*='col-']{
 		margin-left: 2%;
         margin-right: 0%;
-        margin-bottom: 2%;
+        margin-top: 1%;
+        margin-bottom: 1%;
 	}
 	.col-1-2,
 	.col-2 {
-		flex: 0 0 44%; 
+		flex: 0 0 46%; 
 	}
 	.col-1-4,
 	.col-3,
-	.col-4,
+	.col-4
 	{
-		flex: 0 0 92%;
+		flex: 0 0 94%;
 	}
-	.reverse [class*='col-'] {
-		margin-left: 0%;
-		margin-right: 4%;
-	}
-
 
 }
 /*Desktop Size */
 @media only screen and (min-width: 768px) {
 	.col-1-2,
 	.col-1-4 {
-		flex: 0 0 20%;
+		flex: 0 0 22%;
 	}
     .col-2
      {
-		flex: 0 0 44%;
+		flex: 0 0 46%;
 	}
 	.col-3 {
-		flex: 0 0 68%;
+		flex: 0 0 70%;
 	}
 	.col-4 {
-		flex: 0 0 92%;
+		flex: 0 0 94%;
     }
 } 
